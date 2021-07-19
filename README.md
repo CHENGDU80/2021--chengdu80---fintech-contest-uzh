@@ -1,11 +1,7 @@
-# RiskInsight: Corporate Risk Insights
+# RiskInsight: Corporate Risk Insights 
 
+## ML Model training code
+Refer to `/model`
 
-## Requirements
-- Python 3.6
-- flask >= 2.0
-
-
-## How to run
-`flask app.py`
-
+## Website source code
+Refer to `/website`
