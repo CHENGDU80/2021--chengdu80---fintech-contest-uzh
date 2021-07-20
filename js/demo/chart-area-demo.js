@@ -34,7 +34,7 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [{
-      label: "Earnings",
+      label: "Carbon30",
       lineTension: 0.3,
       backgroundColor: "rgba(78, 115, 223, 0.05)",
       borderColor: "rgba(78, 115, 223, 1)",
@@ -47,7 +47,23 @@ var myLineChart = new Chart(ctx, {
       pointHitRadius: 10,
       pointBorderWidth: 2,
       data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
-    }],
+    },
+    {
+      label: "CSI300",
+      lineTension: 0.3,
+      backgroundColor: "rgba(115, 78, 100, 0.05)",
+      borderColor: "rgba(115, 78, 100, 1)",
+      pointRadius: 3,
+      pointBackgroundColor: "rgba(115, 78, 100, 1)",
+      pointBorderColor: "rgba(115, 78, 100, 1)",
+      pointHoverRadius: 3,
+      pointHoverBackgroundColor: "rgba(115, 78, 100, 1)",
+      pointHoverBorderColor: "rgba(115, 78, 100, 1)",
+      pointHitRadius: 10,
+      pointBorderWidth: 2,
+      data: [0, 8000, 3000, 12000, 10000, 20000, 16000, 24000, 18000, 32000, 22000, 35000],
+    },
+    ],
   },
   options: {
     maintainAspectRatio: false,
@@ -91,7 +107,7 @@ var myLineChart = new Chart(ctx, {
       }],
     },
     legend: {
-      display: false
+      display: true
     },
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
