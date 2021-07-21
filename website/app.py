@@ -15,11 +15,11 @@ def login1():
     return render_template('sb-admin/login.html')
 
 @app.route("/show_company")
-def login():
+def show_company():
     return render_template('sb-admin/show_company.html')
 
 @app.route("/subscriptions")
-def login():
+def subscriptions():
     return render_template('sb-admin/subscriptions.html')
 
 
