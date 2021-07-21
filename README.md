@@ -4,7 +4,7 @@
 Refer to `/model`
 
 ## Website source code
-Refer to `/website`
+Refer to `/website` and branch `gh-pages`
 
 ## System Structure
 ![fintech80](https://user-images.githubusercontent.com/7789901/126453476-cfdb1873-cc48-4062-83ca-a29d075e394c.jpg)
