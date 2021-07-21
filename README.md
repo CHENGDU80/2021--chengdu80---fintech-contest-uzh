@@ -18,3 +18,7 @@ Refer to `/website`
 
 ![image](https://user-images.githubusercontent.com/33025589/126439831-216d5f4e-2e2e-498f-8ec1-7ca511b36710.png)
 
+## Feature Generation  
+1 We generate financial features from but not limited to the attributes given in the datasets.  
+2 Some financial indicators are modelled as in the paper Altman(1968) and Merton(1974).  
+3 Raw data are majorly used, but outliers, vacants, and logical conflicts are slightly modified.  
