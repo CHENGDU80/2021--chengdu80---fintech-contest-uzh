@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Riscube - Corporate Risk Insights</title>
+    <title>All Companies - Riscube</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,6 +20,9 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -44,16 +47,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-cube"></i>
-                    <span>Home</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <li class="nav-item">
-                <a class="nav-link" href="all_companies.html">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-exclamation-triangle"></i>
                     <span>Risk Analysis</span></a>
             </li>
@@ -62,12 +56,6 @@
                 <a class="nav-link" href="subscriptions.html">
                     <i class="fas fa-fw fa-paper-plane"></i>
                     <span>Subscriptions</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="features.html">
-                    <i class="fas fa-fw fa-chart-line"></i>
-                    <span>Feature Index</span></a>
             </li>
 
             <!-- Divider -->
@@ -228,208 +216,131 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- News Row -->
-                    <div class="row">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">All Companies</h1>
+                    </div>
 
+                    <div class="row">
                         <div class="col-lg-12">
-
-                            <!-- Basic Card Example -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">News （这一块要吹：个性化推荐系统）</h6>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <span class="news-item-category">🟥 </span>
-                                        <a class="news-item-title" href="https://www.bloomberg.com/news/articles/2021-07-19/indonesia-revamps-debt-strategy-to-slash-sales-by-20-billion?srnd=markets-vp">
-                                            Indonesia Revamps Debt Strategy to Slash Sales by $20 Billion
-                                        </a>
-                                        <span class="float-right">59 minutes ago</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="news-item-category">🟧 </span>
-                                        <a class="news-item-title" href="https://www.bloomberg.com/news/articles/2021-07-19/gpif-copycat-fund-bucks-the-trend-to-invest-in-chinese-debt?srnd=markets-vp">
-                                            GPIF Copycat Fund Bucks the Trend to Invest in Chinese Debt
-                                        </a>
-                                        <span class="float-right">3 hours ago</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <span class="news-item-category">⬛️ </span>
-                                        <a class="news-item-title" href="https://www.bloomberg.com/news/articles/2021-07-19/-a-lot-of-very-young-people-are-going-to-buy-the-dip-in-stocks?srnd=markets-vp">
-                                            ‘A Lot of Very Young People’ Are Going to Buy the Dip in Stocks
-                                        </a>
-                                        <span class="float-right">4 hours ago</span>
-                                    </li>
-                                </ul>
-                            </div>
-
+                            <table class="table table-bordered" id="dataTable">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Operational Risk</th>
+                                <th scope="col">Legal Risk</th>
+                                <th scope="col">Loan Risk</th>
+                                <th scope="col">Other Risk</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">929790487</th>
+                                <td><a href="show_company.html">Company 1</a></td>
+                                <td>77.08%</td>
+                                <td>0.01%</td>
+                                <td>0.00%</td>
+                                <td>22.91%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">565888112</th>
+                                <td><a href="show_company.html">Company 2</a></td>
+                                <td>0.04%️</td>
+                                <td>45.43%</td>
+                                <td>23.20%</td>
+                                <td>31.33%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">769345668</th>
+                                <td><a href="show_company.html">Company 3</a></td>
+                                <td>51.62%</td>
+                                <td>0.00%</td>
+                                <td>0.00%</td>
+                                <td>48.38%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">325265909</th>
+                                <td><a href="show_company.html">Company 4</a></td>
+                                <td>0.01%</td>
+                                <td>0.01%</td>
+                                <td>51.34%️</td>
+                                <td>48.64%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">94198675</th>
+                                <td><a href="show_company.html">Company 5</a></td>
+                                <td>50.73%</td>
+                                <td>0.42%</td>
+                                <td>0.00%</td>
+                                <td>48.85%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">613813071</th>
+                                <td><a href="show_company.html">Company 6</a></td>
+                                <td>0.02%</td>
+                                <td>1.68%</td>
+                                <td>47.76%</td>
+                                <td>50.55%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">412285498</th>
+                                <td><a href="show_company.html">Company 7</a></td>
+                                <td>1.25%</td>
+                                <td>0.16%</td>
+                                <td>45.66%</td>
+                                <td>52.94%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">333853715</th>
+                                <td><a href="show_company.html">Company 8</a></td>
+                                <td>0.00%</td>
+                                <td>0.00%</td>
+                                <td>45.81%</td>
+                                <td>54.19%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">516297044</th>
+                                <td><a href="show_company.html">Company 9</a></td>
+                                <td>45.53%</td>
+                                <td>0.00%</td>
+                                <td>0.00%</td>
+                                <td>54.46%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">176707190</th>
+                                <td><a href="show_company.html">Company X</a></td>
+                                <td>44.38%</td>
+                                <td>0.00%</td>
+                                <td>0.02%</td>
+                                <td>55.60%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">136649949</th>
+                                <td><a href="show_company.html">Company X1</a></td>
+                                <td>43.38%</td>
+                                <td>0.69%</td>
+                                <td>0.33%</td>
+                                <td>55.60%</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">58641410</th>
+                                <td><a href="show_company.html">Company X2</a></td>
+                                <td>0.05%</td>
+                                <td>0.08%</td>
+                                <td>43.80%</td>
+                                <td>56.08%</td>
+                              </tr>
+								 
+	
+                            </tbody>
+                            </table>
                         </div>
-
                     </div>
-
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Content Column -->
-                        <div class="col-lg-3 mb-4">
-
-                            <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Popular Companies</h6>
-                                </div>
-
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟥 60</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 40</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">⬛️ 10</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟥 60</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 40</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">⬛️ 10</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟥 60</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 40</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">⬛️ 10</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-lg-6 mb-4">
-                            <!-- Area Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Performance Trend</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                    <hr>
-                                    <span class="float-right">Baseline: CSI300 Index</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Content Column -->
-                        <div class="col-lg-3 mb-4">
-
-                            <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Subscribed Companies</h6>
-                                </div>
-
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 40</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 20</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">⬛️ 10</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 40</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 20</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">⬛️ 10</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 40</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">🟧 20</span>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a class="news-item-title" href="#">
-                                            Company 1
-                                        </a>
-                                        <span class="float-right">⬛️ 10</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                    
                 </div>
                 <!-- /.container-fluid -->
+
 
             </div>
             <!-- End of Main Content -->
@@ -492,6 +403,12 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
 </body>
 
 </html>

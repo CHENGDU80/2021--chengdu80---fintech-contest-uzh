@@ -91,6 +91,8 @@ var myLineChart = new Chart(ctx, {
         },
         ticks: {
           maxTicksLimit: 5,
+          maxRotation: 0,
+          minRotation: 0,
           callback: function(value, index, values) {
             // return '$' + number_format(value);
             return value.substring(0,7);
