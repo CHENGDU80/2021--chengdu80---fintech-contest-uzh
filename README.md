@@ -7,7 +7,7 @@ Refer to `/model`
 Refer to `/website`
 
 ## System Structure
-![fintech80](https://user-images.githubusercontent.com/33025589/126439312-9f035336-2263-4c2d-9f89-4be98049b5dc.png)
+![fintech80](https://user-images.githubusercontent.com/7789901/126453476-cfdb1873-cc48-4062-83ca-a29d075e394c.jpg)
 
 ## Web Page  
 ![image](https://user-images.githubusercontent.com/33025589/126439808-9cc0e01d-88c9-4884-b5b6-d0df8d606f6c.png)
