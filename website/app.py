@@ -10,8 +10,8 @@ def index():
     return render_template('sb-admin/index.html')
 #    return "<h1>Hello, World!</h1>"
 
-@app.route("/login")
-def login():
+@app.route("/login1")
+def login1():
     return render_template('sb-admin/login.html')
 
 @app.route("/show_company")
